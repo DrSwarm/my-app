@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./componets/header/header.component";
-import { TasksComponent } from "./componets/tasks/tasks.component";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faAnkh } from '@fortawesome/free-solid-svg-icons';
+import { HeaderComponent } from "./coomponets/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, TasksComponent, FontAwesomeModule],
+  imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  faAnkh = faAnkh;
+  
 }
-
-
-
-
