@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Task } from '../../Task';
+import { TASKS } from '../../mock-tasks';
+import { TasksComponent } from '../tasks/tasks.component';
 
 @Component({
   selector: 'app-task-item',
@@ -8,4 +11,5 @@ import { Component } from '@angular/core';
 })
 export class TaskItemComponent {
 
+  @Input() task?: Task;
 }
