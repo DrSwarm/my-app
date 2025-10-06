@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { NgStyle } from "../../../../node_modules/@angular/common";
 
 @Component({
@@ -9,6 +9,6 @@ import { NgStyle } from "../../../../node_modules/@angular/common";
 })
 export class ButtonComponent {
 
-  @Input() text: string = "";
-  @Input() color: string = "";
+  @Input() text = signal("");
+  @Input() color = signal("");
 }
